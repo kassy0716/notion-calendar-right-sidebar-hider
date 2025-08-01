@@ -1,6 +1,6 @@
 {
   "name": "Notion Calendar Right-Pane Toggle",
-  "description": "右サイドバー（268 px 列）をワンクリック／Ctrl(⌘)+Shift+P で表示・非表示にします。",
+  "description": "右サイドバー（268 px 列）をワンクリック／Ctrl(⌘)+Shift+Pで表示・非表示にするChrome拡張。",
   "version": "1.0.0",
   "manifest_version": 3,
   "icons": {
@@ -25,6 +25,8 @@
   "host_permissions": [
     "*://*.notion.so/*"
   ],
+  "homepage_url": "https://github.com/kassy0716/notion-rightpane-toggle",
+  "support_url": "https://github.com/kassy0716/notion-rightpane-toggle/issues",
   "background": {
     "service_worker": "background.js"
   },
