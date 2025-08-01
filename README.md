@@ -1,61 +1,56 @@
 # Notion Calendar Right-Pane Toggle
-
 > **Unofficial extension – not affiliated with Notion Labs, Inc.**
 
-Notion Calendar の右サイドバー（コンテキストパネル）を  
-ワンクリックまたは **Ctrl / ⌘ + Shift + P** で表示・非表示に切り替えるだけの軽量 Chrome 拡張です。  
-作業領域を広げたいときにどうぞ。
+Toggle the right sidebar (context panel) in Notion Calendar with a toolbar icon or **Ctrl / ⌘ + Shift + P**.  
+ワンクリック／ショートカットで Notion Calendar の右サイドバーを表示・非表示し、作業領域を最大化します。
 
 ---
 
-## ✨ Features
-
-| 🇬🇧 | 🇯🇵 |
-|-----|-----|
-| Hide the 268-px right column and expand the main view. | 右サイドバー（幅 268 px）を消してメインビューを全幅表示。 |
-| Toggle instantly via toolbar icon or keyboard shortcut. | アイコン／ショートカットで即時トグル。 |
-| Only two permissions: `activeTab`, `scripting`. | 必要権限は `activeTab`, `scripting` だけ。 |
-| **No data collection** — nothing is stored or sent anywhere. | **データ収集ゼロ** – 送信・保存は一切ありません。 |
-| Open-source (MIT). | オープンソース（MIT ライセンス）。 |
+## ✨ Features / 主な機能
+- **Hide / show** the 268-px right column and expand the main view.  
+  右サイドバー（幅 268 px）を消してメインビューを全幅表示。  
+- Instant toggle via toolbar icon or shortcut.  
+  アイコンまたはショートカットで即時トグル。  
+- Only two permissions: `activeTab`, `scripting`.  
+  必要権限は `activeTab`, `scripting` のみ。  
+- **No data collection** – nothing is stored or sent anywhere.  
+  データ収集ゼロ。  
+- Open-source under the MIT license.  
+  MIT ライセンスのオープンソース。  
 
 ---
 
-## ▶️ Installation
-
-1. **Chrome Web Store** からインストール  
-   （公開後にリンクを追加 → `https://chrome.google.com/webstore/detail/...`）  
-2. Notion Calendar を開き直します。  
-3. アイコンをクリック、または **Ctrl / ⌘ + Shift + P** でトグル。
+## ▶️ Installation / インストール
+1. Install from the **Chrome Web Store** (link will appear after publication).  
+   公開後、Chrome ウェブストアからインストール。  
+2. Reload Notion Calendar.  
+   Notion Calendar を再読み込みします。  
+3. Click the extension icon or press **Ctrl / ⌘ + Shift + P** to toggle.  
+   アイコンをクリック、または **Ctrl / ⌘ + Shift + P** でトグル。  
 
 ---
 
 ## 🔧 Permissions
-
-| Permission | Why it’s needed |
-|------------|-----------------|
-| `activeTab` | Inject CSS **only in the active tab** (the current Notion Calendar page). |
-| `scripting` | Run a small script that toggles sidebar visibility. |
-
-_No additional APIs or remote calls are used._
+| Permission | Why it is needed |
+|------------|------------------|
+| `activeTab` | Inject CSS **only in the active Notion Calendar tab** to hide/show the sidebar. |
+| `scripting` | Use `chrome.scripting.executeScript` to toggle the CSS variable `--context-panel-width`. |
 
 ---
 
-## 🔒 Privacy Policy
-
+## ## Privacy Policy
 This extension does **not** collect, store, or transmit any personal data.  
-It operates entirely on-device by injecting CSS into the current Notion Calendar page.
+Permissions used are limited to `activeTab` and `scripting`, required solely to manipulate CSS in the open Notion Calendar tab.  
+No analytics, tracking, or remote code is executed.
 
 ---
 
-## 🐞 Support / Feedback
-
-開発中のバグ報告・機能要望は **Issues** へどうぞ 👉  
-<https://github.com/kassy0716/notion-rightpane-toggle/issues>
-
-Pull Requests も大歓迎です！
+## 🐞 Support / サポート
+GitHub Issues: <https://github.com/kassy0716/notion-rightpane-toggle/issues>  
+Bug reports and feature requests are welcome.  
+不具合・要望は上記 Issues へお気軽にどうぞ。
 
 ---
 
-## 📜 License
-
+## 📜 License / ライセンス
 MIT License © 2025 TK
