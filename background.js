@@ -1,30 +1,30 @@
-/* background.js — 右ペインを CSS でトグル */
-const STYLE_ID = 'nc-hide-sidebar-style';
-const HIDE_CSS = `
-  div[class^="sc-1448fr8-0"]       { display:none!important; }
-  div[class^="sc-27l728-2"]        { display:grid!important; grid-template-columns:1fr!important; }
-  div[class^="sc-1448fr8-1"]       { width:100%!important; max-width:100%!important; flex:1 1 auto!important; }
-`;
+const STYLE_ID='nc-toggle-flag';
+const DEFAULT='268px';
+let hidden=false;
 
-function toggleSidebar(tabId) {
+function toggle(tabId){
   chrome.scripting.executeScript({
-    target: { tabId },
-    func: (STYLE_ID, HIDE_CSS) => {
-      const s = document.getElementById(STYLE_ID);
-      if (s) {                      // ← 既に隠れている → 表示
-        s.remove();
-      } else {                      // ← 非表示にする
-        const style = document.createElement('style');
-        style.id = STYLE_ID;
-        style.textContent = HIDE_CSS;
-        document.head.appendChild(style);
+    target:{tabId},
+    world:'MAIN',
+    func:(flag,def,id)=>{
+      const root=document.documentElement;
+      const cur=getComputedStyle(root).getPropertyValue('--context-panel-width').trim();
+      if(flag||cur==='0px'){
+        root.style.setProperty('--context-panel-width',def);
+        flag=false;
+      }else{
+        root.style.setProperty('--context-panel-width','0px');
+        flag=true;
       }
+      /* ← ここで再レイアウトを強制 */
+      window.dispatchEvent(new Event('resize'));
+      return flag;
     },
-    args: [STYLE_ID, HIDE_CSS]
-  });
+    args:[hidden,DEFAULT,STYLE_ID]
+  },([r])=>{hidden=r.result;});
 }
 
-chrome.action.onClicked.addListener(tab => toggleSidebar(tab.id));
-chrome.commands.onCommand.addListener((cmd, tab) => {
-  if (cmd === 'toggle-right-pane') toggleSidebar(tab.id);
+chrome.action.onClicked.addListener(t=>toggle(t.id));
+chrome.commands.onCommand.addListener((c,t)=>{
+  if(c==='toggle-right-pane')toggle(t.id);
 });
