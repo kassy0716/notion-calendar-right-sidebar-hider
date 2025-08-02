@@ -6,7 +6,7 @@ Toggle the right sidebar (context panel) in Notion Calendar with a toolbar icon 
 
 ---
 
-## ✨ Features / 主な機能
+## Features / 主な機能
 - **Hide / show** the 268-px right column and expand the main view.  
   右サイドバー（幅 268 px）を消してメインビューを全幅表示。  
 - Instant toggle via toolbar icon or shortcut.  
@@ -20,9 +20,9 @@ Toggle the right sidebar (context panel) in Notion Calendar with a toolbar icon 
 
 ---
 
-## ▶️ Installation / インストール
-1. Install from the **Chrome Web Store** (link will appear after publication).  
-   公開後、Chrome ウェブストアからインストール。  
+## Installation / インストール
+1. Install from the **[Chrome Web Store](https://chromewebstore.google.com/detail/notion-calendar-right-pan/pmpfhihhoafelkldmbkomjkljfebhnem?hl=ja)**.  
+   **[Chrome ウェブストア](https://chromewebstore.google.com/detail/notion-calendar-right-pan/pmpfhihhoafelkldmbkomjkljfebhnem?hl=ja)**からインストール。  
 2. Reload Notion Calendar.  
    Notion Calendar を再読み込みします。  
 3. Click the extension icon or press **Ctrl / ⌘ + Shift + P** to toggle.  
@@ -30,7 +30,7 @@ Toggle the right sidebar (context panel) in Notion Calendar with a toolbar icon 
 
 ---
 
-## 🔧 Permissions
+## Permissions
 | Permission | Why it is needed |
 |------------|------------------|
 | `activeTab` | Inject CSS **only in the active Notion Calendar tab** to hide/show the sidebar. |
@@ -45,12 +45,12 @@ No analytics, tracking, or remote code is executed.
 
 ---
 
-## 🐞 Support / サポート
+## Support / サポート
 GitHub Issues: <https://github.com/kassy0716/notion-rightpane-toggle/issues>  
 Bug reports and feature requests are welcome.  
 不具合・要望は上記 Issues へお気軽にどうぞ。
 
 ---
 
-## 📜 License / ライセンス
+## License / ライセンス
 MIT License © 2025 TK
