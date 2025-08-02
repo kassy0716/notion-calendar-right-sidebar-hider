@@ -38,7 +38,7 @@ Toggle the right sidebar (context panel) in Notion Calendar with a toolbar icon 
 
 ---
 
-## ## Privacy Policy
+## Privacy Policy
 This extension does **not** collect, store, or transmit any personal data.  
 Permissions used are limited to `activeTab` and `scripting`, required solely to manipulate CSS in the open Notion Calendar tab.  
 No analytics, tracking, or remote code is executed.
