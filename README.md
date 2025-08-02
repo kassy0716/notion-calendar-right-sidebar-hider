@@ -1,7 +1,7 @@
-# Notion Calendar Right-Pane Toggle
+# Notion Calendar Right Sidebar Hider
 > **Unofficial extension – not affiliated with Notion Labs, Inc.**
 
-Toggle the right sidebar (context panel) in Notion Calendar with a toolbar icon or **Ctrl / ⌘ + Shift + P**.  
+Hide/show the right sidebar (context panel) in Notion Calendar with a toolbar icon or **Ctrl / ⌘ + Shift + P**.  
 ワンクリック／ショートカットで Notion Calendar の右サイドバーを表示・非表示し、作業領域を最大化します。
 
 ---
@@ -51,7 +51,7 @@ No analytics, tracking, or remote code is executed.
 ---
 
 ## Support / サポート
-GitHub Issues: <https://github.com/kassy0716/notion-rightpane-toggle/issues>  
+GitHub Issues: <https://github.com/kassy0716/notion-calendar-right-sidebar-hider/issues>  
 Bug reports and feature requests are welcome.  
 不具合・要望は上記 Issues へお気軽にどうぞ。
 

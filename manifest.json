@@ -1,5 +1,5 @@
 {
-  "name": "Notion Calendar Right-Pane Toggle",
+  "name": "Notion Calendar Right Sidebar Hider",
   "description": "右サイドバー（268 px 列）をワンクリック／Ctrl(⌘)+Shift+P で表示・非表示にする Chrome 拡張。",
   "version": "1.0.0",
   "manifest_version": 3,
@@ -10,7 +10,7 @@
     "128": "icons/icon128.png"
   },
   "action": {
-    "default_title": "Toggle Right Pane",
+    "default_title": "Hide Right Sidebar",
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
@@ -25,7 +25,7 @@
   "host_permissions": [
     "*://*.notion.so/*"
   ],
-  "homepage_url": "https://github.com/kassy0716/notion-rightpane-toggle",
+  "homepage_url": "https://github.com/kassy0716/notion-calendar-right-sidebar-hider",
   "background": {
     "service_worker": "background.js"
   },
