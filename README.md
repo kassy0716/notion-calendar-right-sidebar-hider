@@ -30,18 +30,23 @@ Toggle the right sidebar (context panel) in Notion Calendar with a toolbar icon 
 
 ---
 
-## Permissions
-| Permission | Why it is needed |
+## Permissions / 権限
+| Permission / 権限 | Why it is needed / 必要な理由 |
 |------------|------------------|
-| `activeTab` | Inject CSS **only in the active Notion Calendar tab** to hide/show the sidebar. |
-| `scripting` | Use `chrome.scripting.executeScript` to toggle the CSS variable `--context-panel-width`. |
+| `activeTab` | Inject CSS **only in the active Notion Calendar tab** to hide/show the sidebar.<br>**アクティブなNotion Calendarタブでのみ**CSSを注入してサイドバーの表示・非表示を制御。 |
+| `scripting` | Use `chrome.scripting.executeScript` to toggle the CSS variable `--context-panel-width`.<br>`chrome.scripting.executeScript`を使用してCSS変数`--context-panel-width`を切り替え。 |
 
 ---
 
-## Privacy Policy
+## Privacy Policy / プライバシーポリシー
 This extension does **not** collect, store, or transmit any personal data.  
+この拡張機能は個人データの収集、保存、送信を**一切行いません**。
+
 Permissions used are limited to `activeTab` and `scripting`, required solely to manipulate CSS in the open Notion Calendar tab.  
-No analytics, tracking, or remote code is executed.
+使用権限は`activeTab`と`scripting`に限定され、開いているNotion CalendarタブのCSS操作のためのみに使用されます。
+
+No analytics, tracking, or remote code is executed.  
+分析、追跡、リモートコードの実行は一切行われません。
 
 ---
 
