@@ -1,20 +1,20 @@
 {
-  "name": "Notion Calendar Right Sidebar Hider",
-  "description": "右サイドバー（268 px 列）をワンクリック／Ctrl(⌘)+Shift+P で表示・非表示にする Chrome 拡張。",
-  "version": "1.0.1",
+  "name": "Notion Calendar Sidebar Hider",
+  "description": "Notion Calendar の右サイドバー（コンテキストパネル）をワンクリック／Ctrl(⌘)+Shift+P で非表示・再表示します。",
+  "version": "1.0.2",
   "manifest_version": 3,
   "icons": {
-    "16": "icons/icon16.png",
-    "32": "icons/icon32.png",
-    "48": "icons/icon48.png",
+    "16":  "icons/icon16.png",
+    "32":  "icons/icon32.png",
+    "48":  "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "action": {
-    "default_title": "Hide Right Sidebar",
+    "default_title": "Toggle Sidebar",
     "default_icon": {
-      "16": "icons/icon16.png",
-      "32": "icons/icon32.png",
-      "48": "icons/icon48.png",
+      "16":  "icons/icon16.png",
+      "32":  "icons/icon32.png",
+      "48":  "icons/icon48.png",
       "128": "icons/icon128.png"
     }
   },
@@ -25,7 +25,7 @@
   "host_permissions": [
     "*://*.notion.so/*"
   ],
-  "homepage_url": "https://github.com/kassy0716/notion-calendar-right-sidebar-hider",
+  "homepage_url": "https://github.com/kassy0716/notion-rightpane-toggle",
   "background": {
     "service_worker": "background.js"
   },
@@ -35,7 +35,7 @@
         "default": "Ctrl+Shift+P",
         "mac": "Command+Shift+P"
       },
-      "description": "右ペインを開閉"
+      "description": "右サイドバーを表示／非表示"
     }
   }
 }
